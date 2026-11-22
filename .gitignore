@@ -11,3 +11,4 @@ docs/ios-reference/shots/
 *.keystore
 keystore.properties
 .kotlin/
+dist/
