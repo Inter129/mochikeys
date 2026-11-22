@@ -36,6 +36,19 @@
 
 Android 11 이상에서 동작합니다. APK는 CPU별로 나뉘어 있고, 대부분의 폰은 `arm64-v8a`입니다. Obtainium은 기기에 맞는 것을 알아서 고릅니다. APK는 APK Signature Scheme v2로 서명됩니다.
 
+<details>
+<summary>받은 APK가 진짜인지 확인하기</summary>
+
+모든 릴리스는 같은 키로 서명됩니다. 서명 인증서의 SHA-256 지문은 다음과 같습니다.
+
+```
+1C:E7:7C:47:B4:10:B6:67:7E:F7:AC:EA:F5:4B:11:32:EE:E0:13:8F:47:F7:FE:4A:98:FF:5A:E0:27:78:06:ED
+```
+
+각 릴리스의 `SHA256SUMS.txt`로 파일이 손상되지 않았는지도 확인할 수 있습니다.
+
+</details>
+
 ## 키보드 켜기
 
 1. 앱 목록에서 **Mochi Keys 설정**을 엽니다.
