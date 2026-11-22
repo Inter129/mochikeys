@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234 40" width="234" height="40" role="img" aria-label="Signed: APK v2">
+  <path d="M20 0H120a7 7 0 0 1 7 7V33a7 7 0 0 1 -7 7H20a20 20 0 0 1 0-40z" fill="#FFC2CE"/>
+  <path d="M140 0H214a20 20 0 0 1 0 40H140a7 7 0 0 1 -7-7V7a7 7 0 0 1 7-7z" fill="#262933"/>
+  <g transform="translate(18 9)" fill="none" stroke="#5A1F2E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2l7 3v6c0 4.500-3 8-7 9.500C7 19 4 15.500 4 11V5zM7.800 11.200l2.400 2.400 4.200-4.600"/></g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI','Noto Sans',sans-serif" font-size="17" font-weight="700">
+    <text x="50" y="26" fill="#5A1F2E">Signed</text>
+    <text x="151" y="26" fill="#FFFFFF">APK v2</text>
+  </g>
+</svg>

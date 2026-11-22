@@ -1,0 +1,13 @@
+.gradle/
+build/
+*/build/
+local.properties
+
+# Apple 화면 캡처는 측정용 로컬 참고 자료라 공개 저장소에 올리지 않는다
+docs/ios-reference/shots/
+
+# 서명 키는 절대 저장소에 넣지 않는다
+*.jks
+*.keystore
+keystore.properties
+.kotlin/

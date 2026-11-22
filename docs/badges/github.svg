@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366 104" width="366" height="104" role="img" aria-label="Download APK from GitHub Releases">
+  <rect width="366" height="104" rx="52" fill="#171A21"/>
+  <rect x="1" y="1" width="364" height="102" rx="51" fill="none" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="2"/>
+  <rect x="24" y="24" width="56" height="56" rx="18" fill="#FF8AA0"/>
+  <g transform="translate(8 8)" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"><path d="M31 38l13-7.5 13 7.5v14l-13 7.5-13-7.5zM31 38l13 7.5 13-7.5M44 45.500v14"/></g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI','Noto Sans',sans-serif" fill="#FFFFFF">
+    <text x="102" y="45" font-size="17" font-weight="500" fill="#B9BDC8">Download APK from</text>
+    <text x="102" y="74" font-size="27" font-weight="800" letter-spacing="-0.3">GitHub Releases</text>
+  </g>
+</svg>

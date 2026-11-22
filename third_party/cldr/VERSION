@@ -1,0 +1,1 @@
+release-46 common/annotations/{en,ko,ja}.xml → app/src/main/assets/emoji_index.tsv (scripts/build-emoji-index.py)

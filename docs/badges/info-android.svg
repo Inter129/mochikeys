@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 40" width="215" height="40" role="img" aria-label="Android: 11+">
+  <path d="M20 0H130a7 7 0 0 1 7 7V33a7 7 0 0 1 -7 7H20a20 20 0 0 1 0-40z" fill="#FFC2CE"/>
+  <path d="M150 0H195a20 20 0 0 1 0 40H150a7 7 0 0 1 -7-7V7a7 7 0 0 1 7-7z" fill="#262933"/>
+  <g transform="translate(18 9)" fill="none" stroke="#5A1F2E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17a8 8 0 0 1 16 0zM6 9L4 5.500M16 9l2-3.500"/><circle cx="7.5" cy="13.500" r="0.6" fill="#5A1F2E"/><circle cx="14.500" cy="13.500" r="0.6" fill="#5A1F2E"/></g>
+  <g font-family="-apple-system,BlinkMacSystemFont,'SF Pro Text','Segoe UI','Noto Sans',sans-serif" font-size="17" font-weight="700">
+    <text x="50" y="26" fill="#5A1F2E">Android</text>
+    <text x="161" y="26" fill="#FFFFFF">11+</text>
+  </g>
+</svg>
