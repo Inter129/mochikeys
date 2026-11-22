@@ -73,7 +73,15 @@ class KeyboardService : InputMethodService() {
         }
         // target 35+: IME 윈도우도 edge-to-edge. 하단 시스템 바만큼 키보드를 올린다.
         ViewCompat.setOnApplyWindowInsetsListener(root) { _, insets ->
-            keyboard.bottomInset = insets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom
+            // 제스처 내비게이션에서 시스템은 키보드 윈도우 맨 아래에 '키보드 내리기'·'키보드 전환' 버튼 띠를 그린다.
+            // 이 띠는 기기·버전에 따라 내비게이션 바가 아니라 캡션 바나 탭 가능 영역 인셋으로 신고되므로,
+            // 관련 인셋 가운데 가장 큰 값만큼 비워서 지구본·마이크와 겹치지 않게 한다.
+            val parts = listOf(
+                WindowInsetsCompat.Type.navigationBars(), WindowInsetsCompat.Type.captionBar(),
+                WindowInsetsCompat.Type.tappableElement(), WindowInsetsCompat.Type.mandatorySystemGestures(),
+            ).map { insets.getInsets(it).bottom }
+            keyboard.bottomInset = parts.max()
+            android.util.Log.i("MochiKeys", "bottom insets nav/caption/tappable/gestures=$parts")
             keyboard.requestLayout()
             insets
         }
