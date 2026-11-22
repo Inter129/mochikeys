@@ -7,8 +7,8 @@ android {
         minSdk = 30
         targetSdk = 36
         // 릴리스마다 versionCode를 1씩 올린다(Obtainium·시스템이 업데이트를 판단하는 기준)
-        versionCode = 2
-        versionName = "0.1.1"
+        versionCode = 3
+        versionName = "0.1.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     androidResources { noCompress += "data" }

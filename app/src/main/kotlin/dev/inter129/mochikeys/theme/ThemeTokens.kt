@@ -3,8 +3,8 @@ package dev.inter129.mochikeys.theme
 /** 치수(dp)·색·타이밍 토큰. 값은 iOS 27 시뮬레이터(iPhone 17, 402pt) 실측. */
 data class ThemeTokens(
     val rowHeight: Float = 57f,
-    val gapX: Float = 7f,
-    val gapY: Float = 15f,
+    val gapX: Float = 6f,
+    val gapY: Float = 11f,
     val sidePadding: Float = 3.5f,
     val topPadding: Float = 19.5f,
     val bottomPadding: Float = 66f, // 지구본·받아쓰기 영역 자리
