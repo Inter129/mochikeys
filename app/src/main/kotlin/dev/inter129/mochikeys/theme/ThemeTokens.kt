@@ -25,6 +25,15 @@ data class ThemeTokens(
     val repeatIntervalMs: Long = 100,
 ) {
     companion object {
+        /**
+         * 치수 배율이 곱해진 화면 밀도. 치수는 폭 402dp(iPhone 17) 화면에서 잰 값이라, 더 넓은 폰에서는
+         * 높이·글자·간격도 폭에 비례해 키운다(안 그러면 키가 옆으로만 늘어나 납작해진다).
+         * 가로 모드에서 과하게 커지지 않도록 짧은 변 기준으로 계산하고 0.9~1.3배로 제한한다.
+         */
+        fun scaledDensity(res: android.content.res.Resources): Float {
+            val sw = res.configuration.smallestScreenWidthDp.takeIf { it > 0 } ?: 402
+            return res.displayMetrics.density * (sw / 402f).coerceIn(0.9f, 1.3f)
+        }
         val light = ThemeTokens(
             background = 0xFFE0E1E8.toInt(), charKey = 0xFFFFFFFF.toInt(), funcKey = 0xFFFFFFFF.toInt(), pressedKey = 0xFFC4C6CE.toInt(),
             keyText = 0xFF000000.toInt(), keyShadow = 0x00000000,

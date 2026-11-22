@@ -23,7 +23,7 @@ class KeyboardView(
     private val t: ThemeTokens,
     private val onKey: (KeyAction) -> Unit,
 ) : View(context) {
-    private val dp = resources.displayMetrics.density
+    private val dp = ThemeTokens.scaledDensity(resources)
     var bottomInset = 0
     var shifted = false; set(v) { field = v; invalidate() }
     var capsLock = false; set(v) { field = v; invalidate() }

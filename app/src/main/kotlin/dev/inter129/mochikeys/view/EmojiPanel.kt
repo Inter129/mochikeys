@@ -23,7 +23,7 @@ class EmojiPanel(
     private val onAbc: () -> Unit,
     private val onBackspace: () -> Unit,
 ) {
-    private val dp = host.resources.displayMetrics.density
+    private val dp = ThemeTokens.scaledDensity(host.resources)
     private val prefs = host.context.getSharedPreferences("emoji", Context.MODE_PRIVATE)
     private val emojiPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply { textAlign = Paint.Align.CENTER; textSize = 29f * dp }
     private val textPaint = Paint(Paint.ANTI_ALIAS_FLAG)
